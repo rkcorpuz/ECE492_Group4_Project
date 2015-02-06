@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_qsys_0' in SOPC Builder design 'group4_project_system'
  * SOPC Builder design path: C:/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/group4_project_system.sopcinfo
  *
- * Generated: Wed Feb 04 15:14:03 MST 2015
+ * Generated: Fri Feb 06 13:01:01 MST 2015
  */
 
 /*
@@ -75,7 +75,7 @@
 #define ALT_CPU_FLUSHDA_SUPPORTED
 #define ALT_CPU_FREQ 100000000
 #define ALT_CPU_HARDWARE_DIVIDE_PRESENT 0
-#define ALT_CPU_HARDWARE_MULTIPLY_PRESENT 0
+#define ALT_CPU_HARDWARE_MULTIPLY_PRESENT 1
 #define ALT_CPU_HARDWARE_MULX_PRESENT 0
 #define ALT_CPU_HAS_DEBUG_CORE 1
 #define ALT_CPU_HAS_DEBUG_STUB
@@ -108,7 +108,7 @@
 #define NIOS2_EXCEPTION_ADDR 0x1104020
 #define NIOS2_FLUSHDA_SUPPORTED
 #define NIOS2_HARDWARE_DIVIDE_PRESENT 0
-#define NIOS2_HARDWARE_MULTIPLY_PRESENT 0
+#define NIOS2_HARDWARE_MULTIPLY_PRESENT 1
 #define NIOS2_HARDWARE_MULX_PRESENT 0
 #define NIOS2_HAS_DEBUG_CORE 1
 #define NIOS2_HAS_DEBUG_STUB
@@ -379,7 +379,7 @@
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1423087784
+#define SYSID_QSYS_0_TIMESTAMP 1423252458
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 

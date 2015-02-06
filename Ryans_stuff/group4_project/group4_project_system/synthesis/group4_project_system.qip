@@ -2,7 +2,7 @@ set_global_assignment -entity "group4_project_system" -library "group4_project_s
 set_global_assignment -entity "group4_project_system" -library "group4_project_system" -name IP_TOOL_VERSION "12.1sp1"
 set_global_assignment -entity "group4_project_system" -library "group4_project_system" -name IP_TOOL_ENV "qsys"
 set_global_assignment -library "group4_project_system" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../group4_project_system.sopcinfo"]
-set_instance_assignment -entity "group4_project_system" -library "group4_project_system" -name SLD_INFO "QSYS_NAME group4_project_system HAS_SOPCINFO 1 GENERATION_ID 1423087687"
+set_instance_assignment -entity "group4_project_system" -library "group4_project_system" -name SLD_INFO "QSYS_NAME group4_project_system HAS_SOPCINFO 1 GENERATION_ID 1423252379"
 set_global_assignment -library "group4_project_system" -name MISC_FILE [file join $::quartus(qip_path) "../../group4_project_system.cmp"]
 set_global_assignment -name SYNTHESIS_ONLY_QIP ON
 set_global_assignment -library "group4_project_system" -name MISC_FILE [file join $::quartus(qip_path) "../../group4_project_system.qsys"]
@@ -64,6 +64,7 @@ set_global_assignment -library "group4_project_system" -name SOURCE_FILE [file j
 set_global_assignment -library "group4_project_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/group4_project_system_nios2_qsys_0_jtag_debug_module_sysclk.v"]
 set_global_assignment -library "group4_project_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/group4_project_system_nios2_qsys_0_jtag_debug_module_tck.v"]
 set_global_assignment -library "group4_project_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/group4_project_system_nios2_qsys_0_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "group4_project_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/group4_project_system_nios2_qsys_0_mult_cell.v"]
 set_global_assignment -library "group4_project_system" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/group4_project_system_nios2_qsys_0_ociram_default_contents.mif"]
 set_global_assignment -library "group4_project_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/group4_project_system_nios2_qsys_0_oci_test_bench.v"]
 set_global_assignment -library "group4_project_system" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/group4_project_system_nios2_qsys_0_rf_ram_a.mif"]

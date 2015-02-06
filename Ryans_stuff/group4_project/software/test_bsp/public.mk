@@ -121,8 +121,8 @@ ELF_PATCH_FLAG  += --cpu_name $(CPU_NAME)
 ALT_CFLAGS += -mno-hw-div
 
 # Hardware Multiplier present. 
-# setting HARDWARE_MULTIPLY is false
-ALT_CFLAGS += -mno-hw-mul
+# setting HARDWARE_MULTIPLY is true
+ALT_CFLAGS += -mhw-mul
 
 # Hardware Mulx present. 
 # setting HARDWARE_MULX is false
@@ -156,9 +156,9 @@ SOPC_SYSID_FLAG += --sidp=0x1109058
 ELF_PATCH_FLAG  += --sidp 0x1109058
 
 # The SOPC Timestamp 
-# setting SOPC_TIMESTAMP is 1423087784
-SOPC_SYSID_FLAG += --timestamp=1423087784
-ELF_PATCH_FLAG  += --timestamp 1423087784
+# setting SOPC_TIMESTAMP is 1423252458
+SOPC_SYSID_FLAG += --timestamp=1423252458
+ELF_PATCH_FLAG  += --timestamp 1423252458
 
 # Small-footprint (polled mode) driver none 
 # setting altera_avalon_jtag_uart_driver.enable_small_driver is false

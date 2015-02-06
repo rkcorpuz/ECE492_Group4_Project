@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for group4_project
-Wed Feb 04 15:11:33 2015
+Fri Feb 06 16:08:24 2015
 Quartus II 64-Bit Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
 
 
@@ -290,7 +290,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
-    Info: Processing started: Wed Feb 04 15:11:31 2015
+    Info: Processing started: Fri Feb 06 16:08:21 2015
 Info: Command: quartus_sta group4_project -c group4_project
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
@@ -446,8 +446,8 @@ Info (332164): Evaluating HDL-embedded SDC commands
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'group4_project.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Warning (332060): Node: CLOCK_50 was determined to be a clock but was found without an associated clock assignment.
 Warning (332056): PLL cross checking found inconsistent PLL clock settings:
-    Warning (332056): Node: u0|altpll_0|sd1|pll|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 10.000
-    Warning (332056): Node: u0|altpll_0|sd1|pll|clk[1] was found missing 1 generated clock that corresponds to a base clock with a period of: 10.000
+    Warning (332056): Node: u0|altpll_0|sd1|pll|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
+    Warning (332056): Node: u0|altpll_0|sd1|pll|clk[1] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow Model
 Info (332140): No fmax paths to report
@@ -463,8 +463,8 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info: Analyzing Fast Model
 Warning (332060): Node: CLOCK_50 was determined to be a clock but was found without an associated clock assignment.
 Warning (332056): PLL cross checking found inconsistent PLL clock settings:
-    Warning (332056): Node: u0|altpll_0|sd1|pll|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 10.000
-    Warning (332056): Node: u0|altpll_0|sd1|pll|clk[1] was found missing 1 generated clock that corresponds to a base clock with a period of: 10.000
+    Warning (332056): Node: u0|altpll_0|sd1|pll|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
+    Warning (332056): Node: u0|altpll_0|sd1|pll|clk[1] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
@@ -477,9 +477,9 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 502 megabytes
-    Info: Processing ended: Wed Feb 04 15:11:33 2015
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 510 megabytes
+    Info: Processing ended: Fri Feb 06 16:08:24 2015
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 
