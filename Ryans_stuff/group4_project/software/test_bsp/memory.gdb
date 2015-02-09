@@ -3,7 +3,7 @@
 # Machine generated for CPU 'nios2_qsys_0' in SOPC Builder design 'group4_project_system'
 # SOPC Builder design path: C:/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/group4_project_system.sopcinfo
 #
-# Generated: Fri Feb 06 13:01:01 MST 2015
+# Generated: Mon Feb 09 14:43:46 MST 2015
 
 # DO NOT MODIFY THIS FILE
 #

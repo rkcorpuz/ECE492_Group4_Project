@@ -30,6 +30,9 @@
 
 #include <stdio.h>
 #include "includes.h"
+#include "system.h"
+#include "altera_up_avalon_character_lcd.h"
+#include "io.h"
 
 /* Definition of Task Stacks */
 #define   TASK_STACKSIZE       2048
@@ -41,28 +44,80 @@ OS_STK    task2_stk[TASK_STACKSIZE];
 #define TASK1_PRIORITY      1
 #define TASK2_PRIORITY      2
 
+alt_up_character_lcd_dev *char_lcd;
+
 /* Prints "Hello World" and sleeps for three seconds */
 void task1(void* pdata)
 {
+
+	int *sw0 = (int*)SWITCH_BASE;
+	int *sw1 = (int*)SWITCH_0_BASE;
+	char *p = SERVO_PWM_0_BASE;
   while (1)
   { 
-    printf("Hello from task1\n");
-    OSTimeDlyHMSM(0, 0, 3, 0);
+	  if (*sw0 == SWITCH_HAS_IN && *sw1 == SWITCH_HAS_OUT){
+		  IOWR_8DIRECT(SERVO_PWM_0_BASE, 0, 0x11);
+//		  clear_lcd(char_lcd);
+//		  alt_up_character_lcd_set_cursor_pos(char_lcd,0,0);
+//		  alt_up_character_lcd_string(char_lcd, "CW");
+		printf("CW\n");
+	  	}
+
+
+
+	  else if (*sw1 == SWITCH_HAS_IN && *sw0 == SWITCH_HAS_OUT){
+		  IOWR_8DIRECT(SERVO_PWM_0_BASE, 0, 0xFF);
+//		  clear_lcd(char_lcd);
+//		  alt_up_character_lcd_set_cursor_pos(char_lcd,0,0);
+//		  alt_up_character_lcd_string(char_lcd, "CCW");
+		printf("CCW\n");
+	  }
+
+	  else{
+		IOWR_8DIRECT(SERVO_PWM_0_BASE, 0, 0x00);
+//		clear_lcd(char_lcd);
+//		alt_up_character_lcd_set_cursor_pos(char_lcd,0,0);
+//		alt_up_character_lcd_string(char_lcd, "NEUTRAL");
+		printf("NEUTRAL\n");
+	  }
+	  printf("%x %x\n",p[0],p[1]);
+
+	  OSTimeDlyHMSM(0, 0, 5, 0);
   }
 }
 /* Prints "Hello World" and sleeps for three seconds */
 void task2(void* pdata)
 {
   while (1)
-  { 
-    printf("Hello from task2\n");
+  {
+//    printf("Hello from task2\n");
     OSTimeDlyHMSM(0, 0, 3, 0);
   }
 }
+
+
+void clear_lcd(alt_up_character_lcd_dev *lcd){
+	int x = 0;
+	int y = 0;
+	for(y = 0; y < 2; y++){
+		for(x = 0; x < 16; x++){
+			alt_up_character_lcd_set_cursor_pos(lcd,0,0);
+			alt_up_character_lcd_erase_pos(lcd,x,y);
+		}
+	}
+}
+
 /* The main function creates two task and starts multi-tasking */
 int main(void)
 {
-  
+	char_lcd = alt_up_character_lcd_open_dev("/dev/character_lcd_0");
+	if(char_lcd ==NULL){
+	printf("Could not open lcd device\n");}
+
+	alt_up_character_lcd_init(char_lcd);
+//	alt_up_character_lcd_cursor_off(char_lcd);
+	IOWR_8DIRECT(SERVO_PWM_0_BASE, 0, 0x00);
+
   OSTaskCreateExt(task1,
                   NULL,
                   (void *)&task1_stk[TASK_STACKSIZE-1],
@@ -73,7 +128,7 @@ int main(void)
                   NULL,
                   0);
               
-               
+
   OSTaskCreateExt(task2,
                   NULL,
                   (void *)&task2_stk[TASK_STACKSIZE-1],

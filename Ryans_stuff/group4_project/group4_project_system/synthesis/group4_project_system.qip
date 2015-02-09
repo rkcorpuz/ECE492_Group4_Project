@@ -2,7 +2,7 @@ set_global_assignment -entity "group4_project_system" -library "group4_project_s
 set_global_assignment -entity "group4_project_system" -library "group4_project_system" -name IP_TOOL_VERSION "12.1sp1"
 set_global_assignment -entity "group4_project_system" -library "group4_project_system" -name IP_TOOL_ENV "qsys"
 set_global_assignment -library "group4_project_system" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../group4_project_system.sopcinfo"]
-set_instance_assignment -entity "group4_project_system" -library "group4_project_system" -name SLD_INFO "QSYS_NAME group4_project_system HAS_SOPCINFO 1 GENERATION_ID 1423252379"
+set_instance_assignment -entity "group4_project_system" -library "group4_project_system" -name SLD_INFO "QSYS_NAME group4_project_system HAS_SOPCINFO 1 GENERATION_ID 1423522239"
 set_global_assignment -library "group4_project_system" -name MISC_FILE [file join $::quartus(qip_path) "../../group4_project_system.cmp"]
 set_global_assignment -name SYNTHESIS_ONLY_QIP ON
 set_global_assignment -library "group4_project_system" -name MISC_FILE [file join $::quartus(qip_path) "../../group4_project_system.qsys"]
@@ -39,6 +39,7 @@ set_global_assignment -library "group4_project_system" -name SYSTEMVERILOG_FILE 
 set_global_assignment -library "group4_project_system" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_agent.sv"]
 set_global_assignment -library "group4_project_system" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_translator.sv"]
 set_global_assignment -library "group4_project_system" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_translator.sv"]
+set_global_assignment -library "group4_project_system" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/servo_pwm.vhd"]
 set_global_assignment -library "group4_project_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/group4_project_system_sram_0.v"]
 set_global_assignment -library "group4_project_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/group4_project_system_sdram_0.v"]
 set_global_assignment -library "group4_project_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/group4_project_system_altpll_0.v"]

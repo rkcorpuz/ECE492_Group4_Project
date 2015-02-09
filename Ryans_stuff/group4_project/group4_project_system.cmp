@@ -26,7 +26,9 @@
 			sram_0_external_interface_UB_N          : out   std_logic;                                        -- UB_N
 			sram_0_external_interface_CE_N          : out   std_logic;                                        -- CE_N
 			sram_0_external_interface_OE_N          : out   std_logic;                                        -- OE_N
-			sram_0_external_interface_WE_N          : out   std_logic                                         -- WE_N
+			sram_0_external_interface_WE_N          : out   std_logic;                                        -- WE_N
+			switch_0_external_connection_export     : in    std_logic                     := 'X';             -- export
+			servo_pwm_0_conduit_end_0_export        : out   std_logic                                         -- export
 		);
 	end component group4_project_system;
 

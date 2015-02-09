@@ -7,7 +7,15 @@ obj/default/hello_ucosii.o: hello_ucosii.c \
   ../test_bsp//HAL/inc/sys/alt_llist.h \
   ../test_bsp//HAL/inc/priv/alt_alarm.h ../test_bsp//HAL/inc/alt_types.h \
   ../test_bsp/system.h ../test_bsp//UCOSII/inc/ucos_ii.h \
-  ../test_bsp//UCOSII/inc/os_cfg.h ../test_bsp//HAL/inc/os_cpu.h
+  ../test_bsp//UCOSII/inc/os_cfg.h ../test_bsp//HAL/inc/os_cpu.h \
+  ../test_bsp/system.h \
+  ../test_bsp//drivers/inc/altera_up_avalon_character_lcd.h \
+  ../test_bsp//HAL/inc/sys/alt_dev.h ../test_bsp//HAL/inc/sys/alt_llist.h \
+  ../test_bsp//HAL/inc/priv/alt_dev_llist.h \
+  ../test_bsp//HAL/inc/sys/alt_llist.h \
+  ../test_bsp//HAL/inc/sys/alt_alarm.h \
+  ../test_bsp//HAL/inc/sys/alt_warning.h ../test_bsp//HAL/inc/io.h \
+  ../test_bsp//HAL/inc/alt_types.h
 
 ../test_bsp//HAL/inc/includes.h:
 
@@ -40,3 +48,23 @@ obj/default/hello_ucosii.o: hello_ucosii.c \
 ../test_bsp//UCOSII/inc/os_cfg.h:
 
 ../test_bsp//HAL/inc/os_cpu.h:
+
+../test_bsp/system.h:
+
+../test_bsp//drivers/inc/altera_up_avalon_character_lcd.h:
+
+../test_bsp//HAL/inc/sys/alt_dev.h:
+
+../test_bsp//HAL/inc/sys/alt_llist.h:
+
+../test_bsp//HAL/inc/priv/alt_dev_llist.h:
+
+../test_bsp//HAL/inc/sys/alt_llist.h:
+
+../test_bsp//HAL/inc/sys/alt_alarm.h:
+
+../test_bsp//HAL/inc/sys/alt_warning.h:
+
+../test_bsp//HAL/inc/io.h:
+
+../test_bsp//HAL/inc/alt_types.h:

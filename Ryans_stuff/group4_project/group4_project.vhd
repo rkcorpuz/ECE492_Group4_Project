@@ -26,9 +26,12 @@ library ieee;
 	
 	port
 	(
+	
+		GPIO_0	: out std_logic_vector (0 downto 0);
+		
 		-- Input ports and 50 MHz Clock
 		KEY		: in  std_logic_vector (0 downto 0);
-		SW			: in 	std_logic_vector (0 downto 0);
+		SW			: in 	std_logic_vector (1 downto 0);
 		CLOCK_50	: in  std_logic;
 		
 		-- Green leds on board
@@ -78,6 +81,9 @@ architecture structure of group4_project is
 	
 	 component group4_project_system is
         port (
+		  
+				servo_pwm_0_conduit_end_0_export			 : out	std_logic;
+				
             clk_clk                                 : in    std_logic                     := 'X';             -- clk
             reset_reset_n                           : in    std_logic                     := 'X';             -- reset_n
             sdram_0_wire_addr                       : out   DE2_SDRAM_ADDR_BUS;                    -- addr
@@ -92,6 +98,7 @@ architecture structure of group4_project is
             altpll_0_c0_clk                         : out   std_logic;                                        -- clk
             green_leds_external_connection_export   : out   DE2_LED_GREEN;                     -- export
             switch_external_connection_export       : in    std_logic                     := 'X';             -- export
+				switch_0_external_connection_export		 : in		std_logic							:= 'X';
             sram_0_external_interface_DQ            : inout DE2_SRAM_DATA_BUS := (others => 'X'); -- DQ
             sram_0_external_interface_ADDR          : out   DE2_SRAM_ADDR_BUS;                    -- ADDR
             sram_0_external_interface_LB_N          : out   std_logic;                                        -- LB_N
@@ -126,6 +133,9 @@ begin
 	
 	  u0 : component group4_project_system
         port map (
+		  
+				servo_pwm_0_conduit_end_0_export 		 => GPIO_0(0),
+		  
             clk_clk                                 => CLOCK_50,                                
             reset_reset_n                           => KEY(0),                          
             sdram_0_wire_addr                       => DRAM_ADDR,                      
@@ -139,7 +149,8 @@ begin
             sdram_0_wire_we_n                       => DRAM_WE_N,                       
             altpll_0_c0_clk                         => DRAM_CLK,                        
             green_leds_external_connection_export   => LEDG,  
-            switch_external_connection_export       => SW(0),       
+            switch_external_connection_export       => SW(0),
+				switch_0_external_connection_export		 => SW(1),				
             sram_0_external_interface_DQ            => SRAM_DQ,           
             sram_0_external_interface_ADDR          => SRAM_ADDR,          
             sram_0_external_interface_LB_N          => SRAM_LB_N,         

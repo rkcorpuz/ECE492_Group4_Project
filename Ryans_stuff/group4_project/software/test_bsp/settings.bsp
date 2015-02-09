@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>ucosii</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>6-Feb-2015 1:00:58 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1423252858860</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>9-Feb-2015 2:43:45 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1423518225392</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\rcorpuz\ECE492_Group4_Project\Ryans_stuff\group4_project\software\test_bsp</BspGeneratedLocation>
         <BspSettingsFile>.\settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\rcorpuz\ECE492_Group4_Project\Ryans_stuff\group4_project\group4_project_system.sopcinfo</SopcDesignFile>
@@ -1715,39 +1715,51 @@
                 <attributes>timer</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>switch</slaveDescriptor>
+                <slaveDescriptor>switch_0</slaveDescriptor>
                 <addressRange>0x01109020 - 0x0110902F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>green_leds</slaveDescriptor>
+                <slaveDescriptor>switch</slaveDescriptor>
                 <addressRange>0x01109030 - 0x0110903F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>altpll_0</slaveDescriptor>
+                <slaveDescriptor>green_leds</slaveDescriptor>
                 <addressRange>0x01109040 - 0x0110904F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>altpll_0</slaveDescriptor>
+                <addressRange>0x01109050 - 0x0110905F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>jtag_uart_0</slaveDescriptor>
-                <addressRange>0x01109050 - 0x01109057</addressRange>
+                <addressRange>0x01109060 - 0x01109067</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sysid_qsys_0</slaveDescriptor>
-                <addressRange>0x01109058 - 0x0110905F</addressRange>
+                <addressRange>0x01109068 - 0x0110906F</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>character_lcd_0</slaveDescriptor>
-                <addressRange>0x01109060 - 0x01109061</addressRange>
+                <addressRange>0x01109070 - 0x01109071</addressRange>
                 <addressSpan>2</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>servo_pwm_0</slaveDescriptor>
+                <addressRange>0x01109072 - 0x01109072</addressRange>
+                <addressSpan>1</addressSpan>
                 <attributes/>
         </MemoryMap>
         <LinkerSection>

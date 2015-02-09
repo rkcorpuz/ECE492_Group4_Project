@@ -2,7 +2,7 @@
 <?scdStore version="2"?>
 
 <scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
-<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.312160084;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.312160084.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base.952949276;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.371895440">
+<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1586419626;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1586419626.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base.405113593;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.1222062029">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="C:/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/test_bsp/UCOSII/inc"/>
 <includePath path="C:/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/test_bsp/HAL/inc"/>
@@ -231,7 +231,7 @@
 <definedSymbol symbol="__ucosii__=1"/>
 </collector>
 </instance>
-<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.312160084;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.312160084.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.458335213;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.1635181973">
+<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1586419626;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1586419626.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.1502941971;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.242242530">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="C:/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/test_bsp/UCOSII/inc"/>
 <includePath path="C:/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/test_bsp/HAL/inc"/>

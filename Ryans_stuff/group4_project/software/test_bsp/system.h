@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_qsys_0' in SOPC Builder design 'group4_project_system'
  * SOPC Builder design path: C:/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/group4_project_system.sopcinfo
  *
- * Generated: Fri Feb 06 13:01:01 MST 2015
+ * Generated: Mon Feb 09 14:43:46 MST 2015
  */
 
 /*
@@ -137,6 +137,7 @@
 #define __ALTERA_UP_AVALON_CHARACTER_LCD
 #define __ALTERA_UP_AVALON_SRAM
 #define __ALTPLL
+#define __SERVO_PWM
 
 
 /*
@@ -155,19 +156,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart_0"
-#define ALT_STDERR_BASE 0x1109050
+#define ALT_STDERR_BASE 0x1109060
 #define ALT_STDERR_DEV jtag_uart_0
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart_0"
-#define ALT_STDIN_BASE 0x1109050
+#define ALT_STDIN_BASE 0x1109060
 #define ALT_STDIN_DEV jtag_uart_0
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart_0"
-#define ALT_STDOUT_BASE 0x1109050
+#define ALT_STDOUT_BASE 0x1109060
 #define ALT_STDOUT_DEV jtag_uart_0
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -180,7 +181,7 @@
  *
  */
 
-#define ALTPLL_0_BASE 0x1109040
+#define ALTPLL_0_BASE 0x1109050
 #define ALTPLL_0_IRQ -1
 #define ALTPLL_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define ALTPLL_0_NAME "/dev/altpll_0"
@@ -195,7 +196,7 @@
  */
 
 #define ALT_MODULE_CLASS_character_lcd_0 altera_up_avalon_character_lcd
-#define CHARACTER_LCD_0_BASE 0x1109060
+#define CHARACTER_LCD_0_BASE 0x1109070
 #define CHARACTER_LCD_0_IRQ -1
 #define CHARACTER_LCD_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define CHARACTER_LCD_0_NAME "/dev/character_lcd_0"
@@ -209,7 +210,7 @@
  */
 
 #define ALT_MODULE_CLASS_green_leds altera_avalon_pio
-#define GREEN_LEDS_BASE 0x1109030
+#define GREEN_LEDS_BASE 0x1109040
 #define GREEN_LEDS_BIT_CLEARING_EDGE_REGISTER 0
 #define GREEN_LEDS_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define GREEN_LEDS_CAPTURE 0
@@ -246,7 +247,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart_0 altera_avalon_jtag_uart
-#define JTAG_UART_0_BASE 0x1109050
+#define JTAG_UART_0_BASE 0x1109060
 #define JTAG_UART_0_IRQ 1
 #define JTAG_UART_0_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_0_NAME "/dev/jtag_uart_0"
@@ -327,6 +328,20 @@
 
 
 /*
+ * servo_pwm_0 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_servo_pwm_0 servo_pwm
+#define SERVO_PWM_0_BASE 0x1109072
+#define SERVO_PWM_0_IRQ -1
+#define SERVO_PWM_0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define SERVO_PWM_0_NAME "/dev/servo_pwm_0"
+#define SERVO_PWM_0_SPAN 1
+#define SERVO_PWM_0_TYPE "servo_pwm"
+
+
+/*
  * sram_0 configuration
  *
  */
@@ -346,7 +361,7 @@
  */
 
 #define ALT_MODULE_CLASS_switch altera_avalon_pio
-#define SWITCH_BASE 0x1109020
+#define SWITCH_BASE 0x1109030
 #define SWITCH_BIT_CLEARING_EDGE_REGISTER 0
 #define SWITCH_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define SWITCH_CAPTURE 0
@@ -368,18 +383,45 @@
 
 
 /*
+ * switch_0 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_switch_0 altera_avalon_pio
+#define SWITCH_0_BASE 0x1109020
+#define SWITCH_0_BIT_CLEARING_EDGE_REGISTER 0
+#define SWITCH_0_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define SWITCH_0_CAPTURE 0
+#define SWITCH_0_DATA_WIDTH 1
+#define SWITCH_0_DO_TEST_BENCH_WIRING 0
+#define SWITCH_0_DRIVEN_SIM_VALUE 0x0
+#define SWITCH_0_EDGE_TYPE "NONE"
+#define SWITCH_0_FREQ 100000000u
+#define SWITCH_0_HAS_IN 1
+#define SWITCH_0_HAS_OUT 0
+#define SWITCH_0_HAS_TRI 0
+#define SWITCH_0_IRQ -1
+#define SWITCH_0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define SWITCH_0_IRQ_TYPE "NONE"
+#define SWITCH_0_NAME "/dev/switch_0"
+#define SWITCH_0_RESET_VALUE 0x0
+#define SWITCH_0_SPAN 16
+#define SWITCH_0_TYPE "altera_avalon_pio"
+
+
+/*
  * sysid_qsys_0 configuration
  *
  */
 
 #define ALT_MODULE_CLASS_sysid_qsys_0 altera_avalon_sysid_qsys
-#define SYSID_QSYS_0_BASE 0x1109058
+#define SYSID_QSYS_0_BASE 0x1109068
 #define SYSID_QSYS_0_ID 0
 #define SYSID_QSYS_0_IRQ -1
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1423252458
+#define SYSID_QSYS_0_TIMESTAMP 1423517063
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 
