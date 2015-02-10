@@ -7434,3 +7434,234 @@ org.eclipse.core.runtime.AssertionFailedException: unknown saveable: org.eclipse
 
 !ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 15:27:01.527
 !MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109068 --id=0x0 --timestamp=1423517063 /cygdrive/c/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/test/test.elf]
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-02-09 15:55:29.631
+!MESSAGE Indexed 'tester_bsp' (94 sources, 67 headers) in 0.87 sec: 2,293 declarations; 10,047 references; 125 unresolved inclusions; 5 syntax errors; 203 unresolved names (1.62%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-02-09 15:55:30.707
+!MESSAGE Indexed 'tester' (1 sources, 13 headers) in 0.02 sec: 8 declarations; 23 references; 15 unresolved inclusions; 0 syntax errors; 6 unresolved names (16.22%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 15:58:41.525
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 15:58:41.946
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109068 --id=0x0 --timestamp=1423522294]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 15:58:43.616
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109068 --id=0x0 --timestamp=1423522294 /cygdrive/c/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/tester/tester.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 15:59:50.236
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 15:59:50.626
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109068 --id=0x0 --timestamp=1423522294]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 15:59:52.295
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109068 --id=0x0 --timestamp=1423522294 /cygdrive/c/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/tester/tester.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:06:27.466
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2015-02-09 17:06:33.206
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: System timestamp mismatch - connected: "1423526589", expected: "1423522294".
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:631)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2015-02-09 17:06:33.206
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: System timestamp mismatch - connected: "1423526589", expected: "1423522294".
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:631)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:07:26.107
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109068 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:07:27.714
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109068 --id=0x0 /cygdrive/c/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/tester/tester.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:18:23.841
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:18:24.247
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109068 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:18:25.853
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109068 --id=0x0 /cygdrive/c/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/tester/tester.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:19:18.927
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:19:19.317
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109068 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:19:20.923
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109068 --id=0x0 /cygdrive/c/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/tester/tester.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:19:42.204
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:19:42.594
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109068 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:19:44.201
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109068 --id=0x0 /cygdrive/c/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/tester/tester.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:22:11.513
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:22:11.950
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109068 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:22:13.557
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109068 --id=0x0 /cygdrive/c/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/tester/tester.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:22:50.952
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:22:51.342
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109068 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:22:52.949
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109068 --id=0x0 /cygdrive/c/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/tester/tester.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:23:17.973
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:23:18.386
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109068 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:23:19.993
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109068 --id=0x0 /cygdrive/c/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/tester/tester.elf]
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-02-09 17:24:12.613
+!MESSAGE Indexed 'test1_bsp' (94 sources, 67 headers) in 0.58 sec: 2,293 declarations; 10,047 references; 125 unresolved inclusions; 5 syntax errors; 203 unresolved names (1.62%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-02-09 17:24:13.971
+!MESSAGE Indexed 'test1' (1 sources, 13 headers) in 0.02 sec: 8 declarations; 23 references; 15 unresolved inclusions; 0 syntax errors; 6 unresolved names (16.22%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:25:18.263
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:25:18.653
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109068 --timestamp=1423526589]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:25:20.259
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109068 --timestamp=1423526589 /cygdrive/c/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/test1/test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:25:54.316
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:25:54.706
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109068 --timestamp=1423526589]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:25:56.313
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109068 --timestamp=1423526589 /cygdrive/c/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/test1/test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:26:29.574
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:26:29.964
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109068 --timestamp=1423526589]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:26:31.571
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109068 --timestamp=1423526589 /cygdrive/c/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/test1/test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:27:49.214
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:27:49.620
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109068 --timestamp=1423526589]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:27:51.227
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109068 --timestamp=1423526589 /cygdrive/c/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/test1/test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:28:53.317
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:28:53.707
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109068 --timestamp=1423526589]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:28:55.313
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109068 --timestamp=1423526589 /cygdrive/c/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/test1/test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:29:08.763
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:29:09.153
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109068 --timestamp=1423526589]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:29:10.759
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109068 --timestamp=1423526589 /cygdrive/c/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/test1/test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:30:12.241
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:30:12.647
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109068 --timestamp=1423526589]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:30:14.253
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109068 --timestamp=1423526589 /cygdrive/c/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/test1/test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:30:37.811
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:30:38.217
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109068 --timestamp=1423526589]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:30:39.824
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109068 --timestamp=1423526589 /cygdrive/c/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/test1/test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:32:00.150
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:32:00.540
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109068 --timestamp=1423526589]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:32:02.147
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109068 --timestamp=1423526589 /cygdrive/c/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/test1/test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:33:20.336
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:33:20.945
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109068 --timestamp=1423526589]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:33:22.551
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109068 --timestamp=1423526589 /cygdrive/c/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/test1/test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:34:55.186
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:34:55.592
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109068 --timestamp=1423526589]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:34:57.199
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109068 --timestamp=1423526589 /cygdrive/c/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/test1/test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:36:06.917
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:36:07.525
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109068 --timestamp=1423526589]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-09 17:36:09.117
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109068 --timestamp=1423526589 /cygdrive/c/Users/rcorpuz/ECE492_Group4_Project/Ryans_stuff/group4_project/software/test1/test1.elf]
